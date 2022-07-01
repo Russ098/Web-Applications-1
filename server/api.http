@@ -1,0 +1,22 @@
+GET http://localhost:3001/api/surveys
+
+###
+
+GET http://localhost:3001/api/questions?sid=1
+
+
+###
+GET http://localhost:3001/api/questionAns?sid=1&qid=0
+
+###
+POST http://localhost:3001/api/saveUser
+
+Content-Type: application/json
+body: {"usrname":"Fra", sid:1}
+
+###
+POST http://localhost:3001/api/login
+
+Content-Type: application/json 
+body: { username: "firstAdmin", password: "password" }
+        
